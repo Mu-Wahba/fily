@@ -1,0 +1,5 @@
+{
+  "file_name": "./test-file",
+  "dist_path": "./chuncks",
+  "number_of_chuncks": 7
+}
