@@ -36,7 +36,6 @@ The utility behaves differently based on the specified type:
 - `-t`: Type of operation (`search`, `count`, `split`, or `replace`).
 - `-fp`: File path to the file you want to process.
 - `-w`: Word to search for (only used with `search` and `replace` types).
-- `-r`: New word to replace the old word with (only used with `replace` type).
 - `-dp`: Destination path for the split files (only used with `split` type).
 - `-cs`: Chunk size in MB (only used with `split` type).
 - `-ln`: Line number flag (set to `true` to include line numbers in search results).
@@ -77,7 +76,7 @@ To count numbers of words and line in a file located at `/path/to/largefile.txt`
 To replace the word "oldword" with "newword" in a file located at `/path/to/file.txt`, use:
 
 ```bash
-./fily -t replace -fp /path/to/file.txt -w oldword -r newword
+./fily -t replace -fp /path/to/file.txt -ow oldword -nw newword
 ```
 #### Top Words Example
 
